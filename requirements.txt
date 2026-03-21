@@ -2,7 +2,7 @@ streamlit>=1.35.0
 pandas>=2.2.2
 PyMuPDF>=1.24.1
 plotly
-transformers
+transformers==4.40.0
 torch
 pytz
 streamlit-lottie
