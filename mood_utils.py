@@ -13,7 +13,11 @@ def load_model():
     )
 classifier = load_model()
 def analyze_text(text):
-    res = classifier(text)[0]
+    #res = classifier(text)[0]
+    #results = {r["label"]: r["score"] for r in res}
+    raw = classifier(text)
+    print("RAW OUTPUT:", raw)  # this will show in Streamlit Cloud logs
+    res = raw[0]
     results = {r["label"]: r["score"] for r in res}
     pos = 0
     pos_num = 0
