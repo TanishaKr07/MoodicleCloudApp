@@ -78,7 +78,7 @@ def build_heatmap(subset):
     texts = subset["Text"].dropna().astype(str).tolist()
     all_results = []
     for entry in texts:
-        res = classifier(entry)[0]
+        res = classifier(entry, top_k=None)[0]
         row = {r["label"]: r["score"] for r in res}
         row["Entry"] = entry
         all_results.append(row)
