@@ -9,15 +9,12 @@ def load_model():
     return pipeline(
         "text-classification",
         model="j-hartmann/emotion-english-distilroberta-base", 
-        return_all_scores=True
+        #return_all_scores=True
+        top_k=None
     )
 classifier = load_model()
 def analyze_text(text):
-    #res = classifier(text)[0]
-    #results = {r["label"]: r["score"] for r in res}
-    raw = classifier(text)
-    print("RAW OUTPUT:", raw)  # this will show in Streamlit Cloud logs
-    res = raw[0]
+    res = classifier(text)[0]
     results = {r["label"]: r["score"] for r in res}
     pos = 0
     pos_num = 0
