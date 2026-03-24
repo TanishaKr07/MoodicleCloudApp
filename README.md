@@ -9,16 +9,16 @@ And that is how Moodicle was born.
 ## Features
 
 ### 📝 MoodLogs
-Write or upload a journal entry and Moodicle runs it through a fine-tuned RoBERTa emotion classifier — `j-hartmann/emotion-english-distilroberta-base` - returning scores across 7 emotions: joy, sadness, anger, fear, disgust, surprise, and neutral. Those scores are aggregated into positive, neutral, and negative sentiment and saved over time so you can track your emotional tone across days, weeks, and months.
+Write or upload a journal entry and Moodicle runs it through a fine-tuned RoBERTa emotion classifier - `j-hartmann/emotion-english-distilroberta-base` - returning scores across 7 emotions: joy, sadness, anger, fear, disgust, surprise, and neutral. Those scores are aggregated into positive, neutral, and negative sentiment and saved over time so you can track your emotional tone across days, weeks, and months.
 
 ### 📊 Mood Trends
 The home dashboard visualises your mood data as an interactive donut chart showing the breakdown of positive, neutral, and negative sentiment, alongside an emotion heatmap that shows which specific emotions dominated your entries across any timeframe you choose.
 
 ### 🌱 MoodBloom
-A daily checklist of 12 mood-lifting habits — from sleep and hydration to mindfulness and creative expression. Check them off and a Lottie plant animation grows with every 4 habits completed. Your habit history is visualised as a weekly heatmap so you can see consistency over time.
+A daily checklist of 12 mood-lifting habits - from sleep and hydration to mindfulness and creative expression. Check them off and a Lottie plant animation grows with every 4 habits completed. Your habit history is visualised as a weekly heatmap so you can see consistency over time.
 
 ### 🧘 MoodBot (Zen)
-Zen is a custom AI therapist persona built on Llama 3.3 70B via the Groq API. Before the conversation begins, Zen reads your 5 most recent mood entries and uses them as context — so responses are grounded in your actual emotional patterns, not generic advice.
+Zen is a custom AI therapist persona built on Llama 3.3 70B via the Groq API. Before the conversation begins, Zen reads your 5 most recent mood entries and uses them as context, so responses are grounded in your actual emotional patterns, not generic advice.
 
 ---
 
@@ -28,8 +28,8 @@ Zen is a custom AI therapist persona built on Llama 3.3 70B via the Groq API. Be
 |---|---|
 | Framework | Streamlit |
 | Language | Python |
-| Emotion model | HuggingFace Transformers — distilRoBERTa |
-| AI companion | Groq API — Llama 3.3 70B |
+| Emotion model | HuggingFace Transformers - distilRoBERTa |
+| AI companion | Groq API - Llama 3.3 70B |
 | Visualisation | Plotly |
 | Data | Pandas |
 | Animations | Streamlit Lottie |
